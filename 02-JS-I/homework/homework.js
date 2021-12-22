@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = null;
+const nuevaString = 'damian';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 43;
@@ -49,13 +49,13 @@ function multiplica(x, y) {
 }
 
 function divide(x, y) {
-  var dividir = x / y;
+  var dividir = x % y;
   return dividir;
   
 }
 
 function sonIguales(x, y) {
-  if( x == y){
+  if( x === y){
    var resultado = false;
   }else{
     resultado = true;
@@ -108,7 +108,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num/2===0){
+  if(num%2===0){
     return true;
   }else{
     return false;
@@ -119,7 +119,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num/2 !== 0){
+  if(num%2 != 0){
     return true;
   }else{
     return false;
@@ -131,14 +131,14 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  var elevado = math.pow(num,2);
+  var elevado = Math.pow(num,2);
   return elevado;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  var elevado = math.pow(num,3);
+  var elevado = Math.pow(num,3);
   return elevado;
 }
 
